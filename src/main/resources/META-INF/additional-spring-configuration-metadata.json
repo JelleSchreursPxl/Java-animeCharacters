@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "luffy.phonenumber",
+      "type": "java.lang.String",
+      "description": "Description for luffy.phonenumber."
+  }
+] }
