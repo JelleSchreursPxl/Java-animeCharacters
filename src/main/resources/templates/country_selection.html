@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search universities</title>
+</head>
+<body>
+<form th:action="@{/universities}">
+  <div>
+    <label>Country:</label>
+    <input type="text" th:name="country" />
+  </div>
+  <input type="submit"/>
+</form>
+</body>
+</html>

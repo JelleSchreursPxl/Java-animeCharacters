@@ -8,6 +8,7 @@ import be.pxl.anime.service.MissionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import javax.validation.ValidationException;
 import java.util.List;
 import java.util.Optional;
@@ -48,6 +49,7 @@ public class AnimeMissionServiceImpl implements MissionService {
     }
 
     @Override
+    @Transactional
     public MissionDTO updateMission(Long missionId, UpdateMissionRequest missionRequest) {
         Mission mission = missionRepository.findById(missionId).orElseThrow(() -> new ResourceNotFoundException("Mission", "ID", missionId));
         mission.setCompleted(missionRequest.isCompleted());

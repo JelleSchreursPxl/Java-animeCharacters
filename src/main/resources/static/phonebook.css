@@ -1,0 +1,38 @@
+body {
+    background-color: rgba(40, 156, 195, 255);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px black solid;
+    border-radius: 5%;
+    width: 40%;
+    margin-left: 30%;
+    background-color: rgb(8, 95, 124);
+}
+
+label {
+    padding: 10px;
+    color: rgb(207, 212, 212);
+}
+
+input {
+    background-color: rgb(207, 212, 212);
+}
+
+#saveButton {
+    margin: 10px;
+    width: 170px;
+    background-color: green;
+    color: rgb(207, 212, 212);
+}
+
+.row {
+    padding: 5px;
+}

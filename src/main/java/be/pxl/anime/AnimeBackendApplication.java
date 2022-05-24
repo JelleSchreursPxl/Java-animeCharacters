@@ -5,7 +5,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+//@SpringBootApplication
 public class AnimeBackendApplication {
 
     private static final Logger LOGGER = LogManager.getLogger(AnimeBackendApplication.class);
