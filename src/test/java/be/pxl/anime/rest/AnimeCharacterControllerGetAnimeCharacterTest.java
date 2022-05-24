@@ -36,7 +36,7 @@ public class AnimeCharacterControllerGetAnimeCharacterTest {
                         .withId(ANIMECHARACTER_ID)
                         .build();
         when(animeCharacterService.findAnimeCharacterById(ANIMECHARACTER_ID)).thenReturn(animeCharacterDetailDTO);
-        mockMvc.perform(MockMvcRequestBuilders.get("anime_character/{id}", ANIMECHARACTER_ID)
+        mockMvc.perform(MockMvcRequestBuilders.get("/anime_characters/{id}", ANIMECHARACTER_ID)
                                               .accept(MediaType.APPLICATION_JSON))
                 .andDo(print())
                 .andExpect(status().isOk())
@@ -51,7 +51,7 @@ public class AnimeCharacterControllerGetAnimeCharacterTest {
         doThrow(ResourceNotFoundException.class)
                 .when(animeCharacterService)
                 .findAnimeCharacterById(ANIMECHARACTER_ID);
-        mockMvc.perform(MockMvcRequestBuilders.get("anime_character/{id}", ANIMECHARACTER_ID)
+        mockMvc.perform(MockMvcRequestBuilders.get("/anime_characters/{id}", ANIMECHARACTER_ID)
                                               .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound());
     }

@@ -7,9 +7,9 @@ import java.util.Collections;
 
 public class AnimeCharacterDetailDTOBuilder extends AnimeCharacterDTO {
     public static final Long ID = 14L;
-    public static final String FIRSTNAME = "Kakarot";
-    public static final String LASTNAME = "Bardock";
-    public static final String CHARACTER_NAME = "Son Goku";
+    public static final String FIRSTNAME = "Luffy";
+    public static final String LASTNAME = "Monkey D.";
+    public static final String CHARACTER_NAME = "Monkey D. Luffy";
 
     private Long id = ID;
     private String firstName = FIRSTNAME;

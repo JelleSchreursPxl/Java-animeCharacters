@@ -4,7 +4,7 @@ services:
   anime_db:
     image: mariadb:latest
     ports:
-      - "3306:3306"
+      - "3309:3306"
     environment:
       MARIADB_DATABASE: 'animedb'
       # So you don't have to use root, but you can if you like
@@ -13,4 +13,13 @@ services:
       MARIADB_PASSWORD: 'password'
       # Password for root access
       MARIADB_ROOT_PASSWORD: 'admin'
+#    environment:
+#      image: mysql:latest
+#      MYSQL_DATABASE: 'animedb'
+#      # So you don't have to use root, but you can if you like
+#      MYSQL_USER: 'user'
+#      # You can use whatever password you like
+#      MYSQL_PASSWORD: 'password'
+#      # Password for root access
+#      MYSQL_ROOT_PASSWORD: 'admin'
 
