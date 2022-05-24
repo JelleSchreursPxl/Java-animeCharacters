@@ -16,11 +16,10 @@ public class Mission {
     private boolean completed;
     private boolean deleted;
 
-    @ManyToMany(cascade = CascadeType.MERGE)
+    @ManyToMany(mappedBy = "missions")
     private List<AnimeCharacter> animeCharacters = new ArrayList<>();
 
     public Mission(){
-
     }
 
     public Mission(String missionName, boolean completed, boolean deleted) {

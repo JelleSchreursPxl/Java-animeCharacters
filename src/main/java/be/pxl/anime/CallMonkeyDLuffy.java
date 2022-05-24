@@ -10,7 +10,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import java.util.Scanner;
 
-@SpringBootApplication
+//@SpringBootApplication
 public class CallMonkeyDLuffy {
 
     @Autowired

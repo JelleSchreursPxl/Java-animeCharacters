@@ -1,9 +1,8 @@
-package be.pxl.anime.mocking;
+package be.pxl.anime.rest;
 
 import be.pxl.anime.api.anime_character.AnimeCharacterDetailDTO;
 import be.pxl.anime.builder.AnimeCharacterDetailDTOBuilder;
 import be.pxl.anime.exception.ResourceNotFoundException;
-import be.pxl.anime.rest.AnimeCharacterController;
 import be.pxl.anime.service.AnimeCharacterService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

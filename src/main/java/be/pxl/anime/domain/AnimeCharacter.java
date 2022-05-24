@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name="anime_character")
+@Table(name="anime_characters")
 public class AnimeCharacter {
 
     private static final Logger LOGGER = LogManager.getLogger(AnimeCharacter.class);
